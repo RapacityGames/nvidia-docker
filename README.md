@@ -14,9 +14,11 @@ instead.
 For Docker users specifically, the NVIDIA Container Toolkit CLI (`nvidia-ctk`)
 includes functionality to ensure that the `nvidia` runtime has been registered
 with the Docker daemon. Installing the NVIDIA Container Toolkit and running:
-```
+
+```coda
 sudo nvidia-ctk runtime configure
 ```
+
 will load (or create) an `/etc/docker/daemon.json` file and ensure that the
 NVIDIA Container Runtime is configured as a runtime named `nvidia`.
 

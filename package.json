@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "prettier": "3.0.3"
+  },
+  "dependencies": {
+    "yum": "^0.1.1"
+  }
+}

@@ -10,14 +10,13 @@
 # distributed under the License is distributed on an "AS IS" BASIS,
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
-# limitations under the License.
+# limitat ions under the License.
 
 default:
   image: docker
   services:
-    - name: docker:dind
-      command: ["--experimental"]
-
+    - command: ["--experimental"]
+      name: docker:dind
 variables:
   # We specify the LIB_VERSION, TOOLKIT_VERSION, and TOOLKIT_TAG variable to allow packages
   # to be built.
@@ -82,9 +81,9 @@ trigger-pipeline:
       - ${ARTIFACTS_DIR}
 
   before_script:
-  - apk update
-  - apk upgrade
-  - apk add coreutils build-base sed git bash make
+    - apk update
+    - apk upgrade
+    - apk add coreutils build-base sed git bash make
 
 build:
   extends:

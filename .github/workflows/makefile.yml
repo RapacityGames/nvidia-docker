@@ -15,8 +15,7 @@ jobs:
     - uses: actions/checkout@v3
 
     - name: make
-      run: nvidia-docker
-/Makefile
+      run: ./Makefile
 
 
     - name: Install dependencies

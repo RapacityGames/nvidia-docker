@@ -14,8 +14,10 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: Base
-      run: ./
+    - name: make
+      run: nvidia-docker
+/Makefile
+
 
     - name: Install dependencies
       run: make
